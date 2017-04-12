@@ -1,0 +1,10 @@
+*.DS_Store
+*.pyc
+
+bin
+include
+lib
+pip-selfcheck.json
+.Python
+
+django/db.sqlite3
