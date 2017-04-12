@@ -7,4 +7,4 @@ lib
 pip-selfcheck.json
 .Python
 
-django/db.sqlite3
+interview/db.sqlite3
