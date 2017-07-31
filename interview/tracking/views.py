@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.http import HttpResponse
+from django.shortcuts import render 
+
+from .models import *
 
 def home(request):
-	is_new_visitor = 'TODO: determine if a user is new or not'
-	if is_new_visitor:
-		return HttpResponse('Hello new customer!')
-	else:
-		return HttpResponse('Hello returning customer!')
+	context = {
+		'is_new_visitor': 'TODO: determine if a user is new or not',
+		'num_visits': 'TODO: determine number of page views a user has'
+	}
+	return render(request, 'index.html', context)
+	
